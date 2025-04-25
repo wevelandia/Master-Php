@@ -1,0 +1,20 @@
+/* Estilo para el avatar en el formulario */
+.form-avatar {
+    width: 55px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el avatar en el navbar */
+.navbar-avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 999px;
+}
+
+.navbar-container-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    overflow: hidden;
+}

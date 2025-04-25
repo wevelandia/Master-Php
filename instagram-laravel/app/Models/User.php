@@ -17,8 +17,14 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    /* Acá adicionamos nuevos campos de surname y nick.
+       y en el metodo de create del controlador RegisteredUserController
+       se adicionan esos dos campos para porderlo alamacenar en la tabla */
     protected $fillable = [
+        'role',
         'name',
+        'surname',
+        'nick',
         'email',
         'password',
     ];

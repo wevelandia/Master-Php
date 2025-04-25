@@ -36,9 +36,28 @@ return [
             'throw' => false,
         ],
 
+        /* Este disco plublico y en la carpeta storage es donde se guardan las imagenes */
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
+        /* Creamos un disco para las imagenes del usuario */
+        'users' => [
+            'driver' => 'local',
+            'root' => storage_path('app/users'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
+        /* Creamos un disco para las imagenes generales de la plataforma */
+        'images' => [
+            'driver' => 'local',
+            'root' => storage_path('app/images'),
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
             'throw' => false,
